@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/main_portfolio/static/css/main.0e042871.css",
+    "main.js": "/main_portfolio/static/js/main.eca87ea4.js",
+    "static/js/787.1ed0c42c.chunk.js": "/main_portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/mandcClone.png": "/main_portfolio/static/media/mandcClone.b03a1d93d0b0bb44ec3e.png",
+    "static/media/keycodeChallenge.png": "/main_portfolio/static/media/keycodeChallenge.39cecfed9e5131a7234f.png",
+    "static/media/drumkitProject.png": "/main_portfolio/static/media/drumkitProject.248d6d0aa761066f1cfa.png",
+    "static/media/dicegameProject.png": "/main_portfolio/static/media/dicegameProject.c4db8c6c5325c7ecd50d.png",
+    "static/media/mysqlLogo.png": "/main_portfolio/static/media/mysqlLogo.67646295cd91e7a3920e.png",
+    "static/media/portfolio_first.png": "/main_portfolio/static/media/portfolio_first.c42ab7f9040b666a71c6.png",
+    "static/media/cssLogo.png": "/main_portfolio/static/media/cssLogo.68cb310262e710e0b25c.png",
+    "static/media/vscodeLogo.png": "/main_portfolio/static/media/vscodeLogo.3721028f995b7706a719.png",
+    "static/media/reactLogo.png": "/main_portfolio/static/media/reactLogo.14d4677ca54453a9211f.png",
+    "static/media/javascriptLogo.png": "/main_portfolio/static/media/javascriptLogo.130c0ecd57833da6f75c.png",
+    "static/media/Profilepic.jpg": "/main_portfolio/static/media/Profilepic.c4d4960aa7dbf444d7e0.jpg",
+    "static/media/moodtone.png": "/main_portfolio/static/media/moodtone.da9fb865d92dbb028937.png",
+    "static/media/mongoLogo.png": "/main_portfolio/static/media/mongoLogo.788ba14a56a0932b85c7.png",
+    "index.html": "/main_portfolio/index.html",
+    "main.0e042871.css.map": "/main_portfolio/static/css/main.0e042871.css.map",
+    "main.eca87ea4.js.map": "/main_portfolio/static/js/main.eca87ea4.js.map",
+    "787.1ed0c42c.chunk.js.map": "/main_portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e042871.css",
+    "static/js/main.eca87ea4.js"
+  ]
+}
