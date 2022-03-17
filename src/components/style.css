@@ -109,10 +109,11 @@ body {
 /* ================================================================================================== */
 
 .navbar {
-    height: 60px;
+    box-sizing: border-box;
+    height: 4vw;
     background: #0f0f0f;
     position: absolute;
-    top: 44vw;
+    top: 43.5vw;
     left: 0;
     opacity: 0.99;
     z-index: 99;
@@ -130,10 +131,9 @@ body {
     list-style: none;
     box-sizing: border-box;
     text-align: center;
-    vertical-align: center;
-    padding-top: 17px;
+    padding-top: 1vw;
     font-weight: bold;
-    letter-spacing: 1.2px;
+    font-size: 1.3vw;
 }
 
 .navbarmenuitem1:hover,
@@ -144,10 +144,28 @@ body {
 .navbarmenuitem9:hover,
 .navbarmenuitem10:hover {
     cursor: pointer;
-    background: #8d8b8b;
+    background-color: #8d8b8b;
     color: #0f0f0f;
 }
-
+.navbarmenuitem9,
+.navbarmenuitem10 {
+  background-size: 3vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navbarmenuitem9 {
+  background-image: url(./images/githubLogoLight.png);
+}
+.navbarmenuitem10 {
+  background-size: contain;
+  background-image: url(./images/linkedinLogoLight.png);
+}
+.navbarmenuitem9:hover {
+  background-image: url(./images/githubLogoDark.png);
+}
+.navbarmenuitem10:hover {
+  background-image: url(./images/linkedinLogoDark.png);
+}
 /* ================================================================================================== */
 
 .page2 {
@@ -155,8 +173,8 @@ body {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 94vw;
-    height: 47vw;
+    top: 95vw;
+    height: 48vw;
     background: #191919;
     color: #8d8b8b;
 }
@@ -349,7 +367,7 @@ h2 {
     justify-content: center;
     position: absolute;
     top: 47vw;
-    height: 47vw;
+    height: 48vw;
     background: #8d8b8b;
 }
 .page3 h2 {
@@ -369,51 +387,56 @@ h2 {
   height: 100%;
   margin-left: 2vw;
 }
-.profilePicture {
+/* .profilePicture {
   transform: scale(0.6);
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 65px;
-}
+} */
 .aboutmeFrame {
-  margin: 50px auto;
-  border: 25px solid #222;
-  height: 475px;
-  width: 350px;
+  box-sizing: border-box;
+  margin-bottom: 8vw;
+  border: 2vw solid #222;
+  height: 20vw;
+  width: inherit;
   box-shadow: -2px 3px 10px 4px rgba(0, 0, 0, 0.3);
 }
 .aboutmeBorder {
   background: white;
   height: 100%;
-  width: 100%;
+  width: 98%;
   box-shadow: inset -3px 7px 2px 5px rgba(0, 0, 0, 0.4);
 }
 .aboutmePhoto {
   position: absolute;
-  height: 350px;
-  width: 250px;
-  margin-left: 50px;
-  margin-top: 50px;
+  height: 13vw;
+  width: 10vw;
+  margin-left: 1.25vw;
+  margin-top: 1.5vw;
   box-shadow: inset -3px 4px 2px 5px rgba(0, 0, 0, 0.2);
   border: 2px inset #c9c9c9;
   background-image: url(./images/Profilepic.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
-.page3Left,
-.page3Center {
-  font-size: large;
+.page3Left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.page3Center,
+.page5MainText {
+  font-size: 1vw;
 }
 .page3Right {
-  font-size: medium;
+  height: 100%;
+  font-size: 0.9vw;
   text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
   padding-left: 25px;
-  padding-bottom: 60px;
+  padding-bottom: 5%;
 }
 
 #codenationLink,
@@ -445,10 +468,12 @@ h2 {
 /* ================================================================================================== */
 
 .page4 {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     position: absolute;
-    top: 141vw;
-    height: 47vw;
+    top: 143vw;
+    height: 48vw;
     background: #8d8b8b;
 }
 
@@ -457,10 +482,10 @@ h2 {
 }
 
 .projectGrid {
-    height: 24vw;
-    margin-left: 12.5vw;
+    height: 32vw;
     position: relative;
     top: 10vw;
+    transform: scale(0.97)
 }
 .topProjectGrid,
 .bottomProjectGrid {
@@ -476,6 +501,9 @@ h2 {
     height: 100%;
     overflow: hidden;
     float: left;
+    border-radius: 0.5%;
+    border: 1px solid #0f0f0f;
+    box-sizing: border-box;
 }
 .projectImages {
     height: 100%;
@@ -484,7 +512,7 @@ h2 {
     border-radius: 2px;
 }
 .imageLink:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
@@ -634,29 +662,32 @@ h2 {
 /* ================================================================================================== */
 
 .page5 {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     position: absolute;
-    top: 188vw;
+    top: 191vw;
     height: 47vw;
     background: #191919;
     color: #8d8b8b;
     font-size: large;
+    padding-top: 4vw;
 }
-.page5 h2 {
-  position: absolute;
-  margin: 0 auto;
+.h2container {
+  height: 8%;
+}
+.h2container p {
   text-align: center;
-  margin-top: 130px;
 }
 .page5TextLayout {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
-  position: relative;
-  top: -30px;
+  height: 90%;
 }
 #codewarsLink,
 #codewarsLink:hover,
@@ -669,15 +700,69 @@ h2 {
   box-sizing: border-box;
   margin-left: 3vw;
   text-align: right;
-  font-size: medium;
+  font-size: 0.9vw;
   padding-top: 20%;
+}
+.contact {
+  text-align: center;
+  padding-top: 2vw;
 }
 
 /* =======================================FOOTER===================================================== */
 
 footer {
   text-align: center;
-  font-size: 14px;
-  position: absolute;
-  top: 45vw;
+  font-size: 0.8vw;
+  align-self: flex-end;
+  height: 2%;
+  padding-bottom: 1vw;
+}
+.emailLink:link,
+.emailLink:visited,
+.emailLink:hover,
+.emailLink:active,
+.emailLink {
+  text-decoration: none;
+  color: #8d8b8b;
+}
+/* ======================================MEDIA QUERIES==================================================== */
+
+@media screen and (max-width: 1534px) {
+  .page3 {
+    height: 40vw;
+  }
+  .page2 {
+    height: 40vw;
+    top: 87vw;
+  }
+  .page4 {
+    top: 127vw;
+    height: 40vw;
+  }
+  .page5 {
+    top: 167vw;
+    height: 40vw;
+  }
+  .page3 h2{
+    transform: scale(0.8);
+    margin-top: 30px;
+  }
+  .logoContainer {
+    top: 50px;
+  }
+  .projectGrid {
+    top: 6vw;
+  }
+  .modal {
+    top: 120vw;
+  }
+  .page5 h2 {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 1177px) {
+  .navbarmenuitem {
+    font-size: 1.1vw;
+  }
 }

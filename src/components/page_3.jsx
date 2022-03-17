@@ -7,7 +7,7 @@ const Page3 = () => {
                 <h2>About Me</h2>
                 <div className='page3Layout col11'>
                     <div className='page3Left col2'>
-                        <div className="profilePicture">
+                        <div className="profilePicture col2">
                             <div className="aboutmeFrame">
                                 <div className="aboutmeBorder">
                                     <div className="aboutmePhoto">
@@ -35,7 +35,7 @@ const Page3 = () => {
                         <div className='page3RightText'>
                             <p>Away from coding, my other passions lie in 3D modelling using the open source software <a href='https://www.blender.org/' target='_blank' rel='noreferrer' id='blenderLink'>Blender&reg;</a>, specifically architectural visualisation, or Archviz, commonly used to show buildings for sale that have not been built yet. I will eventually be publishing my work <a href='#' target='_blank' rel='noreferrer' id='archvizLink'>here</a>.<br/>
                             <br/>
-                            I am also a fan of classical music, literature, and art, my favourite artists are the Dutch Masters Vermeer and Van Eyke, and I am currently reading Homer's Odyssey.
+                            I am also a fan of classical music, literature, and art, my favourite artists are the Dutch Masters Vermeer and Van Eyke, and I am currently reading Homer's Iliad.
                             </p>
                         </div>
                     </div>

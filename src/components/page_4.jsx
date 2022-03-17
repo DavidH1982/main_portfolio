@@ -70,32 +70,32 @@ const Page4 = () => {
     return (
         <>
             <section className='page4 col12' id='projectsAnchor'>
-                <div className={cloneShow === true ? 'blurry projectGrid col9' :
-                                keycodeShow === true ? 'blurry projectGrid col9' :
-                                drumShow === true ? 'blurry projectGrid col9' :
-                                diceShow === true ? 'blurry projectGrid col9' :
-                                portfolioShow === true ? 'blurry projectGrid col9' :
-                                projectShow === true ? 'blurry projectGrid col9' :
-                                'projectGrid col9'}>
-                    <div className='topProjectGrid col9'>
-                        <div className='imageLink mandcCloneLink col3' onClick={()=>cloneModalOpen()}>
+                <div className={cloneShow === true ? 'blurry projectGrid col12' :
+                                keycodeShow === true ? 'blurry projectGrid col12' :
+                                drumShow === true ? 'blurry projectGrid col12' :
+                                diceShow === true ? 'blurry projectGrid col12' :
+                                portfolioShow === true ? 'blurry projectGrid col12' :
+                                projectShow === true ? 'blurry projectGrid col12' :
+                                'projectGrid col12'}>
+                    <div className='topProjectGrid col12'>
+                        <div className='imageLink mandcCloneLink col4' onClick={()=>cloneModalOpen()}>
                                 <img src={mandcClone} className="mandcImage projectImages" alt='Miller&amp;Carter Clone'/>
                         </div>
-                        <div className='imageLink keycodeLink col3' onClick={()=>keycodeModalOpen()}>
+                        <div className='imageLink keycodeLink col4' onClick={()=>keycodeModalOpen()}>
                             <img src={keycode} className="keycodeImage projectImages" alt='Keycode Generator'/>
                         </div>
-                        <div className='imageLink drumkitLink col3' onClick={()=>drumModalOpen()}>
+                        <div className='imageLink drumkitLink col4' onClick={()=>drumModalOpen()}>
                             <img src={drumkit} className="drumkitImage projectImages" alt='Drumkit Challenge'/>
                         </div>
                     </div>
-                    <div className='bottomProjectGrid col9'>
-                        <div className='imageLink dicegameLink col3' onClick={()=>diceModalOpen()}>
+                    <div className='bottomProjectGrid col12'>
+                        <div className='imageLink dicegameLink col4' onClick={()=>diceModalOpen()}>
                                 <img src={diceGame} className="projectImages" alt='Dice Game Challenge'/>
                         </div>
-                        <div className='imageLink portfolioLink col3' onClick={()=>portfolioModalOpen()}>
+                        <div className='imageLink portfolioLink col4' onClick={()=>portfolioModalOpen()}>
                             <img src={portfolio} className="projectImages" alt='First Draft Portfolio'/>                    
                         </div>
-                        <div className='imageLink moodtoneLink col3' onClick={()=>projectModalOpen()}>
+                        <div className='imageLink moodtoneLink col4' onClick={()=>projectModalOpen()}>
                             <img src={moodTone} alt='Group Project' className='projectImages'/>    
                         </div>
                     </div>

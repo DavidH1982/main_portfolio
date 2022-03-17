@@ -7,14 +7,16 @@ const NavBar = () => {
     const scrollHeight = () => {
         const allElements = []
         allElements.push(window)
-        allElements.push(document)
+        const screenWidth = allElements[0].innerWidth;
+        const vwPercent = screenWidth/100;
         window.addEventListener('scroll', function(){
-            if (allElements[0].scrollY >= allElements[0].screen.height -185) {
+            if (allElements[0].scrollY >= vwPercent*43.5) {
                 setSticky(true)
             } else {
                 setSticky(false)
             }
         })
+        console.log(allElements[0].innerWidth)
     }
     useEffect(()=> {
         scrollHeight()
@@ -70,8 +72,8 @@ const NavBar = () => {
                 <li className='col1 navbarmenuitem navbarmenuitem6' onClick={()=> projectsAnchor()}>Projects</li>
                 <li className='col1 navbarmenuitem navbarmenuitem7' onClick={()=> whatnextAnchor()}>Whats Next?</li>
                 <li className='col2 navbarmenuitem navbarmenuitem8'></li>
-                <li className='col1 navbarmenuitem navbarmenuitem9'></li>
-                <li className='col1 navbarmenuitem navbarmenuitem10'></li>
+                <a href='https://github.com/DavidH1982' target='_blank' rel='noreferrer' className='githubLink col1 navbarmenuitem navbarmenuitem9'/>
+                <a href='https://linkedin.com/in/david-houghton-79515716a'  target='_blank' rel='noreferrer' className='githubLink col1 navbarmenuitem navbarmenuitem10'/>
             </nav>
         </>
     );
