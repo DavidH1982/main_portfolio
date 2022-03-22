@@ -1,9 +1,30 @@
+import { useEffect, useState } from 'react';
 import './style.css';
 
 const Page5 = () => {
+    const getHeight = () => 
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+
+    const [ height, setHeight ] = useState(getHeight());
+
+    const allElements = [];
+    allElements.push(window);
+    const resize = () => {
+        window.addEventListener('resize', function(){
+            let screenHeight = allElements[0].innerHeight;
+            setHeight(screenHeight)
+        })
+    }
+    useEffect(()=> {
+        resize()
+    });
+
+    const page5Height = height*4;
     return (
         <>
-            <section className='page5 col12' id='whatnextAnchor'>
+            <section className='page5 col12' id='whatnextAnchor' style={{top:`${page5Height}`+'px', height:`${height}`+'px'}}>
                 <div className='h2container col12'>
                     <p className='col12'>What's Next?</p> 
                 </div>

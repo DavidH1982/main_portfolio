@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import './style.css';
 
@@ -10,6 +10,27 @@ import portfolio from './images/portfolio_first.png';
 import moodTone from './images/moodtone.png';
 
 const Page4 = () => {
+
+    const getHeight = () => 
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+
+    const [ height, setHeight ] = useState(getHeight());
+
+    const allElements = [];
+    allElements.push(window);
+    const resize = () => {
+        window.addEventListener('resize', function(){
+            let screenHeight = allElements[0].innerHeight;
+            setHeight(screenHeight)
+        })
+    }
+    useEffect(()=> {
+        resize()
+    });
+
+    const page4Height = height*3;
 
     const [ cloneShow, setCloneShow ] = useState(false);
     const [ keycodeShow, setKeycodeShow ] = useState(false);
@@ -69,7 +90,7 @@ const Page4 = () => {
 
     return (
         <>
-            <section className='page4 col12' id='projectsAnchor'>
+            <section className='page4 col12' id='projectsAnchor' style={{top:`${page4Height}`+'px', height:`${height}`+'px'}}>
                 <div className={cloneShow === true ? 'blurry projectGrid col12' :
                                 keycodeShow === true ? 'blurry projectGrid col12' :
                                 drumShow === true ? 'blurry projectGrid col12' :

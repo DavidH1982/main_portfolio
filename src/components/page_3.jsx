@@ -1,9 +1,28 @@
+import { useEffect, useState } from 'react';
 import './style.css';
 
 const Page3 = () => {
+    const getHeight = () => 
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+
+    const [ height, setHeight ] = useState(getHeight());
+
+    const allElements = [];
+    allElements.push(window);
+    const resize = () => {
+        window.addEventListener('resize', function(){
+            let screenHeight = allElements[0].innerHeight;
+            setHeight(screenHeight)
+        })
+    }
+    useEffect(()=> {
+        resize()
+    });
     return (
         <>
-            <section className='page3 col12' id='aboutmeAnchor'>
+            <section className='page3 col12' id='aboutmeAnchor' style={{top:`${height}`+'px', height:`${height}`+'px'}}>
                 <h2>About Me</h2>
                 <div className='page3Layout col11'>
                     <div className='page3Left col2'>

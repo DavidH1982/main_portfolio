@@ -2,21 +2,38 @@ import { useEffect, useState } from 'react';
 import './style.css';
 
 const NavBar = () => {
-    
+
+    const getHeight = () => 
+        window.innerHeight ||
+        document.documentElement.clientHeight ||
+        document.body.clientHeight;
+
+    const [ height, setHeight ] = useState(getHeight());
+
+    const allElements = [];
+    allElements.push(window);
+    const resize = () => {
+        window.addEventListener('resize', function(){
+            let screenHeight = allElements[0].innerHeight;
+            setHeight(screenHeight)
+        })
+    }
+    useEffect(()=> {
+        resize()
+    });
+
+    const navHeight = 55
+    const elementPosition = height - navHeight;
+
     const [ sticky, setSticky ] = useState(false);
     const scrollHeight = () => {
-        const allElements = []
-        allElements.push(window)
-        const screenWidth = allElements[0].innerWidth;
-        const vwPercent = screenWidth/100;
         window.addEventListener('scroll', function(){
-            if (allElements[0].scrollY >= vwPercent*43.5) {
+            if (allElements[0].scrollY >= elementPosition) {
                 setSticky(true)
             } else {
                 setSticky(false)
             }
         })
-        console.log(allElements[0].innerWidth)
     }
     useEffect(()=> {
         scrollHeight()
@@ -63,7 +80,7 @@ const NavBar = () => {
     }
     return (
         <>
-            <nav className={sticky === true ? 'isSticky navbar col12' : "navbar col12"}>
+            <nav className={sticky === true ? 'isSticky navbar col12' : "navbar col12"} >
                 <li className='col1 navbarmenuitem navbarmenuitem1' onClick={()=> topAnchor()}>Back to top</li>
                 <li className='col2 navbarmenuitem navbarmenuitem2'></li>
                 <li className='col1 navbarmenuitem navbarmenuitem3'></li>
