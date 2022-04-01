@@ -200,7 +200,15 @@ const Page4 = () => {
                                 Dice Game Challenge
                             </h2>
                             <p>
-                                
+                                The brief for this challenge was the rules of the game: roll to a total of 20 without rolling a 1! <br/>
+                                <br/>
+                                I decided to add a carnival feel to the background, to give it a bit more of a feeling of risk, like you have paid to play! <br/>
+                                <br/>
+                                I used a random number indicator to ensure the roll is genuine. The biggest obstacle was getting the dice to animate, imitating a roll, and landing on a side at random. <br/>
+                                <br/>
+                                I enjoyed this challenge, as the brief was about the functionality and I was free to style it however I wished, but was only given 2 days to complete, so stylingwas done retrospectively. <br/>
+                                <br/>
+                                Similar to the drum kit challenge, there was no need for any responsiveness, but given enough time I would have liked to have made both of these challenges mobile friendly.
                             </p>
                             <a href="https://davidh1982.github.io/Dice-Game/" target="_blank" rel="noreferrer">
                                 Click here to see full size
@@ -213,7 +221,19 @@ const Page4 = () => {
                             <h2>
                                 Previous Portfolio Version
                             </h2>
-                            <a href='https://davidh1982.github.io/Portfolio/' target='_blank' rel='noreferrer'>here</a>
+                            <p>
+                                This was a previous incarnation of my portfolio. Although I am not using it, I feel that there are some 
+                                good examples of my skills that I have chosen not to use in this official version. <br/>
+                                <br/>
+                                For example, the API showing a different inspirational quote each time the page is loaded, and the link
+                                to the wikipedia page of the person who said it. I have a few examples of Sass CSS used on the borders in
+                                the projects page. And through not being able to decide on a colour scheme, there is the palette choices. <br/>
+                                <br/>
+                                After working on this version, I found I was not happy with the multipage layout and started again, having
+                                learned a lot of different techniques. As this was not a challenge set by anyone else, I was free to design
+                                this as a whole, and found that to be extremely enjoyable but also a limitless scope which was slightly overwhelming!
+                            </p>
+                            <a href='https://davidh1982.github.io/Portfolio/' target='_blank' rel='noreferrer'>Click here to view in full</a>
                             </div>
                         </div>
             <div className={projectShow === false ? 'hiddenModal projectHidden' : 'projectModal modal'}>
