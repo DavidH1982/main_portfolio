@@ -416,7 +416,12 @@ h2 {
 #archvizLink:hover,
 #archvizLink:link,
 #archvizLink:active,
-#archvizLink:visited {
+#archvizLink:visited,
+.wikiLink,
+.wikkiLink:hover,
+.wikiLink:link,
+.wikiLink:active,
+.wikiLink:visited {
   font-weight: bold;
   text-decoration: none;
   color: #0f0f0f;

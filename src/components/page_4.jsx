@@ -157,7 +157,7 @@ const Page4 = () => {
                                 This challenge was given to be evidence of our understanding of the JS DOM and
                                 using event listeners to apply changes to the DOM in response to user interaction. <br />
                                 <hr />
-                                The brief was to creat a keycode generator, so that on the press of any key the browser
+                                The brief was to create a keycode generator, so that on the press of any key the browser
                                 will show the event.key, the event.code, and the event.which. <br />
                                 <hr />
                                 This simple site is pure HTML and CSS, with no media queries. It is styled using
@@ -206,7 +206,7 @@ const Page4 = () => {
                                 <br/>
                                 I used a random number indicator to ensure the roll is genuine. The biggest obstacle was getting the dice to animate, imitating a roll, and landing on a side at random. <br/>
                                 <br/>
-                                I enjoyed this challenge, as the brief was about the functionality and I was free to style it however I wished, but was only given 2 days to complete, so stylingwas done retrospectively. <br/>
+                                I enjoyed this challenge, as the brief was about the functionality and I was free to style it however I wished, but was only given 2 days to complete, so styling was done retrospectively. <br/>
                                 <br/>
                                 Similar to the drum kit challenge, there was no need for any responsiveness, but given enough time I would have liked to have made both of these challenges mobile friendly.
                             </p>
@@ -227,7 +227,7 @@ const Page4 = () => {
                                 <br/>
                                 For example, the API showing a different inspirational quote each time the page is loaded, and the link
                                 to the wikipedia page of the person who said it. I have a few examples of Sass CSS used on the borders in
-                                the projects page. And through not being able to decide on a colour scheme, there is the palette choices. <br/>
+                                the projects page. And through not being able to decide on a colour scheme, there are all of the palette choices. <br/>
                                 <br/>
                                 After working on this version, I found I was not happy with the multipage layout and started again, having
                                 learned a lot of different techniques. As this was not a challenge set by anyone else, I was free to design
@@ -247,7 +247,7 @@ const Page4 = () => {
                                 performed as a group. We were given 2 weeks to complete and a selection
                                 of briefs to choose from, as a team we chose an original idea. <br />
                                 <hr />
-                                My first job was to implement a dark mode feature, which I acheived by
+                                My first job was to implement a dark mode feature, which I achieved by
                                 using the <a href="https://chakra-ui.com/" target="_blank" rel="noreferrer">
                                 chakra-ui library</a>. This was simple and effective, however brought
                                 an issue during the second week of the project as chakra-ui had a complete
